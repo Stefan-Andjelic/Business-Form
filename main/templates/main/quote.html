@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Share a post{% endblock title %}
 
@@ -9,11 +10,14 @@
       Email was successfully sent to {{ form.cleaned_data.to }}.
     </p>
   {% else %}
-    <h1>Share by e-mail</h1>
-    <form method="post">
-      {{ form.as_p }}
-      {% csrf_token %}
-      <input type="submit" value="Send e-mail">
-    </form>
+    <h1>Request a Quote</h1>
+    <div class="myform">
+      <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Send e-mail">
+      </form>
+    </div>
   {% endif %}
 {% endblock content %}
+

@@ -9,7 +9,7 @@ def main(request):
     return render(request, 'main/home.html')
 
 
-def post_share(request):
+def get_quote(request):
     sent = False
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -22,4 +22,4 @@ def post_share(request):
             sent = True
     else:
         form = ContactForm()
-    return render(request, 'main/share.html', {'form': form, 'sent': sent})
+    return render(request, 'main/quote.html', {'form': form, 'sent': sent})

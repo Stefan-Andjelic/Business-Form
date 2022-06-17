@@ -5,6 +5,6 @@ from . import views
 app_name = 'main'
 
 urlpatterns = [
-    path('', views.main, name='main'),
-    path('share/', views.post_share, name='post_share'),
+    # path('', views.main, name='main'),
+    path('', views.get_quote, name='get_quote'),
 ]

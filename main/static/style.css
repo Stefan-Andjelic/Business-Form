@@ -1,0 +1,10 @@
+.my-navbg {
+    background-color: rgba(238, 36, 231, 0.2);
+}
+
+.myform {
+    margin: auto;
+    background-color: rgba(238, 36, 231, 0.2);
+    width: 1000px;
+    border: 1px solid black;
+}
